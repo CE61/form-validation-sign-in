@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/pexels-jaime-reimer-2662116.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.greeting{
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(97, 210, 255);
+}
+.greeting span{
+    font-size: 52px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px gray;
+    user-select: none;
+}
+.form-container{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    border-radius: 12px;
+}
+.form-container form{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.form-container label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+    font-size: 24px;
+    padding-bottom: 4px;
+}
+.form-container input{
+    font-size: 24px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+}
+.form-container input:invalid{
+    border-style: none;
+    border: 2px solid red;
+}
+.form-container input:focus{
+    border-bottom: 2px solid black;
+}
+.errorMessage{
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+.form-container button{
+    display: block;
+}
+.buttons{
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+#newUser{
+    position: absolute;
+    bottom: 24px;
+    left: calc(50% - 2em);
+}

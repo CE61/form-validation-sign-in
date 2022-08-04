@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation With Javascript</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <!-- Background Photo by Jaime Reimer: https://www.pexels.com/photo/beautiful-view-of-moraine-lake-2662116/-->
+    <div class="form-container">
+        <div class="greeting">
+            <span>Welcome! <br> Sign in below.</span>
+        </div>
+        <form name="myForm" onsubmit="return validateMyForm();">
+            <div class="emailBlock">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <p id="emailErrorMessage" class="errorMessage"></p>
+            </div>
+            <div class="passwordBlock">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <p id="passwordErrorMessage" class="errorMessage"></p>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="login">Login</button>
+                <button onclick="alert(`Forgot password!`); return false;">Forgot Password</button>
+            </div>
+            <button id="newUser" onclick="return false;">New User</button>
+        </form>
+    </div>
+    <script src="script/javascript.js"></script>
+</body>
+</html>
